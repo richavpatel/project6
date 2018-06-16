@@ -1,0 +1,19 @@
+
+<h1>Users</h1>
+
+<table class="table table-dark">
+  <tr class=ric>
+    <th> Id</th>
+    <th> name</th>
+    <th> email</th>
+    <th>Describtaion</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td><a   routerLink="/show/{{user.userId}}"> {{user.userId}}</a> </td>
+    <td>{{user.name}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.description}}</td>
+  </tr>
+  
+  
+</table>
